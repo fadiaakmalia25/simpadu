@@ -27,13 +27,13 @@
           role="menu"
           data-accordion="false">
           <li class="nav-item">
-            <a href="index.php" class="nav-link">
+            <a href="{{ url('mahasiswa') }}" class="nav-link">
               <i class="nav-icon bi bi-mortarboard"></i>
               <p>Mahasiswa</p>
             </a>
             </li>
             <li class="nav-item">
-            <a href="index.php" class="nav-link">
+            <a href="{{ url('prodi') }}" class="nav-link">
               <i class="nav-icon bi bi-journals"></i>
               <p>Program studi</p>
             </a>
