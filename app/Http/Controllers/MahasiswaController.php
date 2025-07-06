@@ -106,9 +106,10 @@ class MahasiswaController extends Controller
         $mahasiswa = Mahasiswa::Find($id);
         if ($request->file('foto')) {
             if($mahasiswa->foto){
-                storage::delete($mahasiswa->foto);
+                storage::delete('images/'. $mahasiswa->foto);
             }
-            $validatedData['foto'] = $request->file('foto')->store('images');
+            $filePath = $request->file('foto')->store('images');
+            $validatedData['foto'] = basename($filePath);
         }
         if ($request->input('password')) {
             $validatedData['password'] = Hash::make($request->password);

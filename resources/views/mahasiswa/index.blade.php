@@ -47,8 +47,7 @@
                                         <th>No</th>
                                         <th>NIM</th>
                                         <th>Nama</th>
-                                        <th>Telp</th>
-                                        <th>Email</th>
+                                        <th>Foto</th>
                                         <th>Prodi</th>
                                         <th>Aksi</th>
                                     </tr>
@@ -59,8 +58,7 @@
                                             <td>{{ $loop->iteration }}</td>
                                             <td>{{ $m->nim }}</td>
                                             <td>{{ $m->nama }}</td>
-                                            <td>{{ $m->telp }}</td>
-                                            <td>{{ $m->email }}</td>
+                                            <td><img src="{{ asset('storage/images/' . $m->foto) }}" width="100px" alt=""></td>
                                             <td>{{ $m->prodi->nama}}</td>
                                             <td><a href="{{ url("mahasiswa/$m->nim/edit") }}"
                                                 class="btn btn-warning">Edit</a>
