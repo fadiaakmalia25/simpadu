@@ -6,7 +6,7 @@
       <a href="./index.html" class="brand-link">
         <!--begin::Brand Image-->
         <img
-          src="../assets/img/AdminLTELogo.png"
+          src="git/assets/img/AdminLTELogo.png"
           alt="AdminLTE Logo"
           class="brand-image opacity-75 shadow" />
         <!--end::Brand Image-->
